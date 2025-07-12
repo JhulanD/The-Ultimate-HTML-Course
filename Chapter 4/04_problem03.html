@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: linear-gradient(120deg, #fbeee6 0%, #d8e2dc 100%);
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+    }
+
+    h1 {
+        text-align: center;
+        color: #2a4d69;
+        margin-top: 30px;
+        letter-spacing: 1px;
+    }
+
+    hr {
+        border: none;
+        border-top: 2px solid #e7c7a7;
+        margin: 30px 0;
+        width: 80%;
+    }
+
+    video {
+        display: block;
+        margin: 0 auto 30px auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    }
+
+    form {
+        background: #fff;
+        max-width: 420px;
+        margin: 0 auto;
+        padding: 35px 30px 25px 30px;
+        border-radius: 16px;
+        box-shadow: 0 6px 32px rgba(44, 62, 80, 0.13);
+    }
+
+    form div {
+        margin-bottom: 22px;
+    }
+
+    label {
+        display: block;
+        font-weight: 600;
+        color: #2a4d69;
+        margin-bottom: 7px;
+        letter-spacing: 0.5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid #bfc9d1;
+        border-radius: 7px;
+        font-size: 1em;
+        background: #f7fafc;
+        transition: border 0.2s;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="date"]:focus,
+    select:focus {
+        border-color: #2a4d69;
+        outline: none;
+    }
+
+    input[type="checkbox"] {
+        margin-right: 7px;
+        accent-color: #2a4d69;
+        transform: scale(1.2);
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        background: linear-gradient(90deg, #2a4d69 70%, #4b86b4 100%);
+        color: #fff;
+        padding: 13px 0;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1em;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.2s, transform 0.1s;
+        margin-top: 10px;
+        letter-spacing: 1px;
+    }
+
+    button[type="submit"]:hover {
+        background: linear-gradient(90deg, #4b86b4 70%, #2a4d69 100%);
+        transform: translateY(-2px) scale(1.03);
+        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.15);
+    }
+
+    @media (max-width: 600px) {
+        form {
+            max-width: 95vw;
+            padding: 20px 7vw;
+        }
+
+        video {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+</style>
+
+    </style>
+    <title>Book a Trip - in Egypt</title>
+</head>
+<body>
+    <h1>
+        Discover the Magic of Egypt – Book Your Dream Vacation Today!
+    </h1>
+    <hr>
+    <video src="https://videos.pexels.com/video-files/32537604/13876108_2560_1440_24fps.mp4" autopla controls muted width="800" height="300">Your browser does nt support video tag</video>
+    <hr>
+    
+
+
+    <form action="#" method="post">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="destination">Destination</label>
+            <select id="destination" name="destination">
+                <option value="cairo">Cairo</option>
+                <option value="luxor">Luxor</option>
+                <option value="aswan">Aswan</option>
+                <option value="sharm_el_sheikh">Sharm El Sheikh</option>
+            </select>
+        </div>
+        <div>
+            <label for="travel_date">Travel Date</label>
+            <input type="date" id="travel_date" name="travel_date" required>
+        </div>
+        <div>
+            <label for="preferences">Preferences</label><br>
+            <input type="checkbox" id="beach" name="preferences" value="beach">
+            <label for="beach">Beach</label><br>
+            <input type="checkbox" id="culture" name="preferences" value="culture">
+            <label for="culture">Culture</label><br>
+            <input type="checkbox" id="adventure" name="preferences" value="adventure">
+            <label for="adventure">Adventure</label><br>
+        </div>
+        <button type="submit">Book Now</button>
+        <button type="submit">Book Now</button>
+    </form>
+</body>
+</html>

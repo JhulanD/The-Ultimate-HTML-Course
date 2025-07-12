@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    border-radius: 10px; /* Adjust as needed for desired roundness */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+    </style>
+    <title>Create an HTML page which opens google when clicked on an image.</title>
+</head>
+<body>
+    <header>
+        <h1>Click the Image to Open Google</h1>
+    </header>
+
+    <main>
+        <p>Click on the image below to visit Google:</p>
+        <a href="https://www.google.com" target="_blank">
+            <img src="https://compote.slate.com/images/301e79ae-bb70-45b1-afd7-e7d47df2e92a.jpeg?crop=7784%2C5190%2Cx0%2Cy18&width=1280https://via.placeholder.com/300" alt="Click to open Google" style="width: 300px; height: auto;">
+        </a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Website. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

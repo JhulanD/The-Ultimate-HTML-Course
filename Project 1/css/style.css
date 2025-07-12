@@ -1,0 +1,217 @@
+/* Import DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1e1e1e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+    height: 60px;
+    border-radius: 8px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+    padding-bottom: 4px;
+    transition: all 0.3s ease;
+}
+
+header ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #e53935;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+header ul li a:hover::after {
+    width: 100%;
+}
+
+/* Main Section with dark overlay on image */
+main {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../images/pexels-chanwalrus-958545.jpg') no-repeat center center/cover;
+    height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+main h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    color: #ff5252;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #ff8a80;
+}
+
+main p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 10px auto;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.search-bar {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 25px;
+    border: none;
+    width: 300px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px 40px;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.footer-content .social-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-content .social-links li a {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.footer-content .social-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #e53935;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.footer-content .social-links li a:hover::after {
+    width: 100%;
+}
+
+.search-bar::placeholder {
+    color: #ccc;
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Search Container (optional for layout) */
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Input Field */
+.search-bar {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 25px;
+    border: none;
+    width: 300px;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.search-bar::placeholder {
+    color: #ccc;
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Search Button */
+.search-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 25px;
+    border: none;
+    background-color: #e53935;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.search-button:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px);
+}
+

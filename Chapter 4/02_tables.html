@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    background: #f7f7fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    color: #ff6a00;
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+}
+
+table {
+    margin: 2.5rem auto;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 900px;
+    background: #fff;
+    box-shadow: 0 4px 24px #ff6a0022;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead {
+    background: linear-gradient(90deg, #ff6a00 0%, #ff3c00 100%);
+}
+
+th, td {
+    padding: 1rem 1.2rem;
+    text-align: left;
+}
+
+th {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #ff3c00;
+}
+
+tbody tr {
+    transition: background 0.2s;
+}
+
+tbody tr:nth-child(even) {
+    background: #fff6f1;
+}
+
+tbody tr:nth-child(odd) {
+    background: #fff;
+}
+
+tbody tr:hover {
+    background: #ffe0cc;
+}
+
+td {
+    font-size: 1rem;
+    color: #333;
+    border-bottom: 1px solid #ffe0cc;
+}
+
+td:last-child, th:last-child {
+    text-align: right;
+}
+
+@media (max-width: 700px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+    th, td {
+        box-sizing: border-box;
+        padding: 0.8rem 0.5rem;
+        text-align: left;
+    }
+    thead {
+        display: none;
+    }
+}
+    </style>
+    <title>HTML Tables</title>
+</head>
+<body>
+    <h1>
+        Tables in HTML
+    </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Occupation</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <!-- Body of the table -->
+         <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>30</td>
+                <td>New York</td>
+                <td>Software Engineer</td>
+                <td>$80,000</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>25</td>
+                <td>Los Angeles</td>
+                <td>Graphic Designer</td>
+                <td>$60,000</td>
+            </tr>
+            <tr>
+                <td>Emily Johnson</td>
+                <td>35</td>
+                <td>Chicago</td>
+                <td>Data Scientist</td>
+                <td>$90,000</td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>28</td>
+                <td>Houston</td>
+                <td>Web Developer</td>
+                <td>$70,000</td>
+            </tr>
+         </tbody>
+    </table>
+</body>
+</html>
